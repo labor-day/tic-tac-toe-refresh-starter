@@ -166,6 +166,7 @@ class Screen {
 
     console.log(Screen.message);
 
+
   }
 
   static setTextColor(row, col, color) {
@@ -214,7 +215,9 @@ class Screen {
       throw new Error("Invalid background color");
     }
 
+
     Screen.backgroundColors[row][col] = code;
+    console.log(Screen.backgroundColors);
   }
 
   static setMessage(msg) {
